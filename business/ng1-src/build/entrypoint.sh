@@ -1,0 +1,1 @@
+while true; do ls /usr/share/caddy; sleep 5; done

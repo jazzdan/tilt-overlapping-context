@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: overlap
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: overlap
+  template:
+    metadata:
+      labels:
+        app: overlap
+    spec:
+      containers:
+      - name: overlap1
+        image: mock-server
+      - name: overlap2
+        image: business-ngall
+
